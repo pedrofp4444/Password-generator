@@ -1,7 +1,5 @@
 defmodule PasswordGeneratorTest do
   use ExUnit.Case
-  doctest PasswordGenerator
-
 
   setup do
     options = %{
@@ -51,7 +49,7 @@ defmodule PasswordGeneratorTest do
 
     test "returns a lowercase string just with the length", %{options_type: options} do
       length_option = %{"length" => "5"}
-      {:ok, result} = PasswordGenerator.generate(lenght_option)
+      {:ok, result} = PasswordGenerator.generate(length_option)
 
       assert String.contains?(result, options.lowercase)
 
@@ -61,7 +59,7 @@ defmodule PasswordGeneratorTest do
     end
 
     test "returns error when options values are not booleans" do
-      options %{
+      options = %{
         "length" => "10",
         "numbers" => "invalid",
         "uppercase" => "0",
