@@ -1,6 +1,8 @@
 # PasswordGenerator
 
-**TODO: Add description**
+## PLEASE BE AWARE THAT THIS PROGRAM MIGHT HAVE SECURITY PROBLEMS
+
+**This is a basic elixir project to create random passwords**
 
 ## Installation
 
@@ -18,4 +20,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/password_generator>.
-
